@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Caparol Paints | Projects Portfolio</title>
+  <style>
+    :root{
+      --brand:#111827;
+      --accent:#f59e0b;
+      --muted:#6b7280;
+      --bg:#ffffff;
+      --card:#ffffff;
+      --chip:#eef2ff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif;background:var(--bg);color:#111}
+    a{color:inherit}
+    .container{max-width:1200px;margin:0 auto;padding:24px}
+    header{position:relative;background:#fff;border-bottom:1px solid #e5e7eb}
+
+.hero {
+  display: block;
+  text-align: center;
+  padding: 48px 0;
+background: #fff;
+}
+.hero h1 {
+  font-size: clamp(32px, 5vw, 48px);
+}
+.hero .lead {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr; /* instead of 1.2fr .8fr */
+  gap: 32px;
+  align-items: center;
+  padding: 32px 0;
+}
+
+    .badge{display:inline-flex;gap:8px;align-items:center;background:var(--chip);padding:6px 10px;border-radius:999px;font-size:12px;color:#3730a3}
+    h1{margin:.3em 0;font-size:clamp(28px,4vw,44px);line-height:1.1}
+    .lead{font-size:clamp(14px,1.8vw,18px);color:var(--muted)}
+    .heroCard{background:var(--card);border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.05)}
+    .heroImg{height:260px;background:linear-gradient(135deg,#111827 0%, #374151 40%, #111827 100%);display:grid;place-items:center;color:#fff;position:relative}
+    .heroImg .dot{position:absolute;width:14px;height:14px;background:#10b981;border:2px solid #fff;border-radius:50%;left:58%;top:54%}
+    .heroBody{padding:18px 18px 22px}
+    .pill{display:inline-block;background:#fef3c7;color:#92400e;padding:4px 10px;border-radius:999px;font-size:12px;margin-bottom:6px}
+
+.btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 14px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+.btn:hover {
+  background: #d97706; /* darker shade of accent */
+}
+
+    /* Grid */
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 4;background:var(--card);border:1px solid #e5e7eb;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 3px 16px rgba(0,0,0,.05)}
+    .cardImg{height:180px;background:#eceff1 center/cover no-repeat}
+    .cardBody{padding:14px 16px 18px}
+    .title{font-weight:700}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .chip{font-size:12px;background:#f3f4f6;border:1px solid #e5e7eb;padding:4px 8px;border-radius:999px}
+    .meta{font-size:13px;color:var(--muted);margin-top:4px}
+
+    /* Map */
+    .mapWrap{position:relative;background:#fff;border:1px solid #e5e7eb;border-radius:14px;overflow:hidden}
+    .map{height:360px;background:linear-gradient(180deg,#e5f0ff,#ffffff)}
+    .pin{position:absolute;transform:translate(-50%,-100%);}
+    .pin .bubble{background:#111827;color:#fff;font-size:12px;padding:4px 8px;border-radius:6px;white-space:nowrap;transform:translateY(-6px)}
+    .pin .dot{width:10px;height:10px;background:var(--accent);border:2px solid #fff;border-radius:50%;margin:0 auto}
+
+
+    /* Utilities */
+    .row{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+    .muted{color:var(--muted)}
+    .sectionTitle{margin:28px 0 12px}
+
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .grid .card{grid-column:span 6}
+      .row{grid-template-columns:1fr}
+    }
+    @media (max-width: 600px){
+      .grid .card{grid-column:span 12}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="hero">
+      <div>
+        <h1>Caparol Paints - Projects Portfolio</h1>
+        <p class="lead">
+          Discover Caparol Paints’ diverse project portfolio across Kenya and beyond. 
+          Explore residential, commercial, and special-coatings works, view our featured projects, 
+          and navigate an interactive project map showcasing our trusted finishes.
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main class="container">
+    <h2 class="sectionTitle">Projects Gallery</h2>
+<div class="grid">
+  <article class="card">
+    <div class="cardImg" style="background-image:url('https://caparolkenya.com/wp-content/uploads/Untitled-1_0004_WhatsApp-Image-2023-08-19-at-15.01.jpg');"></div>
+    <div class="cardBody">
+      <div class="title">Courtyard Home</div>
+      <div class="meta">Rosslyn, Nairobi • Residential</div>
+      <a href="courtyard-home.html" class="btn">View Project</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="cardImg" style="background-image:url('https://caparolkenya.com/wp-content/uploads/Untitled-1_0005_WhatsApp-Image-2023-08-19-at-15.01.541.jpg');"></div>
+    <div class="cardBody">
+      <div class="title">Private Residence</div>
+      <div class="meta">Rosslyn, Nairobi • Residential</div>
+      <a href="private-residence.html" class="btn">View Project</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="cardImg" style="background-image:url('https://caparolkenya.com/wp-content/uploads/Untitled-1_0000_DSC_0517-copy.jpg');"></div>
+    <div class="cardBody">
+      <div class="title">Tender Care School</div>
+      <div class="meta">Komarocks, Nairobi • Educational</div>
+      <a href="tender-care-school.html" class="btn">View Project</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="cardImg" style="background-image:url('https://caparolkenya.com/wp-content/uploads/Untitled-1_0001_DSC_0526.jpg');"></div>
+    <div class="cardBody">
+      <div class="title">Finpark Estate • 142 Villas</div>
+      <div class="meta">Ruai, Nairobi • Residential</div>
+      <a href="finpark-estate.html" class="btn">View Project</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="cardImg" style="background-image:url('https://caparolkenya.com/wp-content/uploads/Untitled-1_0002_DSC_0681-copy.jpg');"></div>
+    <div class="cardBody">
+      <div class="title">Helipad, Kanha Tower</div>
+      <div class="meta">Westlands, Nairobi • Industrial & Special</div>
+      <a href="kanha-tower-helipad.html" class="btn">View Project</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="cardImg" style="background-image:url('https://caparolkenya.com/wp-content/uploads/Untitled-1_0003_DSC_0730-copy.jpg');"></div>
+    <div class="cardBody">
+      <div class="title">Mansions • Private Residence (2 Units)</div>
+      <div class="meta">Lavington, Nairobi • Residential</div>
+      <a href="mansions-private.html" class="btn">View Project</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="cardImg" style="background-image:url('https://caparolkenya.com/wp-content/uploads/Kempinski-Hotel-St.-Moritz-Switzerland-1.jpg');"></div>
+    <div class="cardBody">
+      <div class="title">Kempinski Hotel St. Moritz</div>
+      <div class="meta">Switzerland • Commercial</div>
+      <a href="kempinski-hotel.html" class="btn">View Project</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="cardImg" style="background-image:url('https://caparolkenya.com/wp-content/uploads/World-Heritage-Portovenere-Italy.jpg');"></div>
+    <div class="cardBody">
+      <div class="title">World Heritage – Portovenere</div>
+      <div class="meta">Italy • Commercial</div>
+      <a href="world-heritage-portovenere.html" class="btn">View Project</a>
+    </div>
+</article>
+
+</div>
+
+
+
+<section class="portfolioContent">
+
+<h4 class="sectionTitle" style="color: red;">** SEO Content Section Below **</h4>
+
+  <h2 class="sectionTitle">Caparol Paints Project Portfolio</h2>
+  <p>
+    Our portfolio showcases the versatility, durability, and innovation of <strong>Caparol Paints</strong> 
+    across residential, commercial, and industrial projects. From private homes in Nairobi to 
+    prestigious landmarks like the <em>Kempinski Hotel St. Moritz in Switzerland</em> and 
+    <em>World Heritage Portovenere in Italy</em>, we deliver world-class finishes that blend 
+    design and performance.
+  </p>
+
+<h3 class="sectionTitle">Our Project Expertise</h3>
+<ul>
+  <li>
+    <strong>Residential Projects:</strong> Caparol brings both beauty and protection to modern homes with 
+    washable interior emulsions, weather-resistant exterior paints, and elegant decorative finishes. 
+    Our solutions are designed to complement contemporary lifestyles, adding personality to living spaces 
+    while ensuring long-lasting durability and easy maintenance for families.  
+  </li>
+  
+  <li>
+    <strong>Commercial &amp; Hospitality Projects:</strong> Trusted by architects and developers, 
+    Caparol coatings are widely used in hotels, offices, and retail spaces. Our premium decorative and 
+    protective systems enhance the guest and customer experience by offering durability, elegance, and 
+    ease of upkeep, making them ideal for high-traffic environments that demand both performance and style.  
+  </li>
+  
+  <li>
+    <strong>Educational &amp; Institutional Projects:</strong> Schools, universities, and public 
+    institutions rely on Caparol’s hygienic and durable paint solutions to create safe and inspiring 
+    learning environments. Our products are engineered to withstand daily wear and tear, reduce maintenance 
+    costs, and support healthier surroundings through low-VOC, eco-friendly formulations.  
+  </li>
+  
+  <li>
+    <strong>Industrial &amp; Specialized Projects:</strong> Caparol delivers advanced protective coatings 
+    and floor systems tailored for challenging industrial environments. From factories and warehouses to 
+    specialized infrastructure, our solutions ensure safety, reliability, and long-term performance, 
+    helping businesses operate efficiently under the most demanding conditions.  
+  </li>
+</ul>
+
+
+  <h3>Why Choose Caparol Paints?</h3>
+Caparol Paints offers a wide range of premium interior and exterior solutions designed to enhance both aesthetics and durability. Our products include washable emulsions, weather-resistant exterior paints, and decorative finishes that bring beauty and protection to every space. With a strong commitment to sustainability, we provide eco-friendly, low-VOC paints that support healthier environments and greener projects. Trusted by both global and local clients, Caparol has built a reputation for delivering reliable performance across residential, commercial, and industrial applications. Backed by German innovation and world-class quality standards, we continue to redefine modern painting solutions with excellence.
+
+  <p>
+    Every project in this portfolio represents our dedication to excellence. Explore our completed works 
+    and see how <strong>Caparol Paints</strong> continues to redefine spaces across the globe.
+  </p>
+</section>
+
+</main>
+
+</body>
+</html>
+
+
+</html>
